@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,11 +35,8 @@ $position: 50%;
       transform 0.5s;
     &:hover {
       cursor: pointer;
-      transition:
-        background-color 0.5s,
-        transform 0.5s;
       background-color: $hover-color;
-      transform: translate(0, -20px);
+      transform: translateY(-20px);
     }
   }
 }
